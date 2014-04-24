@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedmineClientW8", "RedmineClientW8\RedmineClientW8.csproj", "{D60384DA-1546-4F80-AA73-A27FC38090CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedmineApi", "RedmineApi\RedmineApi.csproj", "{AD093DF8-4FBA-403C-B13E-09886C06C474}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,16 @@ Global
 		{D60384DA-1546-4F80-AA73-A27FC38090CF}.Release|x86.ActiveCfg = Release|x86
 		{D60384DA-1546-4F80-AA73-A27FC38090CF}.Release|x86.Build.0 = Release|x86
 		{D60384DA-1546-4F80-AA73-A27FC38090CF}.Release|x86.Deploy.0 = Release|x86
+		{AD093DF8-4FBA-403C-B13E-09886C06C474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD093DF8-4FBA-403C-B13E-09886C06C474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD093DF8-4FBA-403C-B13E-09886C06C474}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{AD093DF8-4FBA-403C-B13E-09886C06C474}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AD093DF8-4FBA-403C-B13E-09886C06C474}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AD093DF8-4FBA-403C-B13E-09886C06C474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD093DF8-4FBA-403C-B13E-09886C06C474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD093DF8-4FBA-403C-B13E-09886C06C474}.Release|ARM.ActiveCfg = Release|Any CPU
+		{AD093DF8-4FBA-403C-B13E-09886C06C474}.Release|x64.ActiveCfg = Release|Any CPU
+		{AD093DF8-4FBA-403C-B13E-09886C06C474}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 using Caliburn.Micro;
+using RedmineClientW8.ViewModels;
 using RedmineClientW8.Views;
 
 namespace RedmineClientW8
@@ -32,6 +33,7 @@ namespace RedmineClientW8
         {
             container = new WinRTContainer();
             container.RegisterWinRTServices();
+            container.PerRequest<MainViewModel>();
 
             //TODO: Register your view models at the container
         }
