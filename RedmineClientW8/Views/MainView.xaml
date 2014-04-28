@@ -5,9 +5,46 @@
     xmlns:local="using:RedmineClientW8"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    xmlns:controls="using:Callisto.Controls"
+    mc:Ignorable="d"
+    Loaded="MainView_OnLoaded"
+   >
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Background="LightSkyBlue">
+           <ListBoxItem >
+             <Button x:Name="NavigateToProjectView">
+                 <StackPanel>
+                   <Image Source="ms-appx:///Content/projects.png"/>
+                   <TextBlock Text="Проекты" Foreground="White" HorizontalAlignment="Center"/>
+                 </StackPanel>
+                </Button>
+          </ListBoxItem>
 
+            <ListBoxItem >
+                <Button x:Name="NavigateToMyIssues">
+                    <StackPanel>
+                        <Image Source="ms-appx:///Content/myTickets.png"/>
+                        <TextBlock Text="Мои задачи" Foreground="White" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </ListBoxItem>
+
+            <ListBoxItem >
+                <Button x:Name="NavigateToNews">
+                    <StackPanel>
+                        <Image Source="ms-appx:///Content/myTickets.png"/>
+                        <TextBlock Text="Мои задачи" Foreground="White" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </ListBoxItem>
+        </ListBox>
+        <Frame Grid.Column="1" x:Name="MainFrame" />
+        
+     
     </Grid>
 </Page>

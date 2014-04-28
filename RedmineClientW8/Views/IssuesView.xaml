@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="RedmineClientW8.Views.IssuesView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RedmineClientW8.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:WinRTXamlToolkit.Controls"
+    mc:Ignorable="d">
+
+
+    <Grid Background="SaddleBrown">
+        <ListBox SelectedItem="{Binding SelectedIssue,Mode=TwoWay}"  ItemsSource="{Binding FilteredIssues,Mode=TwoWay}"  >
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <controls:WrapPanel VerticalAlignment="Top" HorizontalAlignment="Left" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border Margin="0,0,0,0"  Padding="5"  Background="LightGoldenrodYellow" CornerRadius="6">
+                        <Grid MaxWidth="600" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0"   Margin="2" Text="{Binding Status.Name,Mode=TwoWay}"   Foreground="Black" />
+                            <TextBlock Grid.Row="1"  TextWrapping="Wrap" Margin="2"  Text="{Binding Subject,Mode=TwoWay}"   Foreground="Black" />
+                            <!--<TextBlock Grid.Row="2"   TextWrapping="Wrap" Margin="2"  Text="{Binding Description,Mode=TwoWay}"   Foreground="Black" />-->
+                            <TextBlock Grid.Row="2"  Margin="2" Text="{Binding CreatedOn,Mode=TwoWay}"   Foreground="Black" />
+                       </Grid>
+                     </Border>
+                   
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="VerticalAlignment" Value="Top"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+    
+    </Grid>
+</Page>

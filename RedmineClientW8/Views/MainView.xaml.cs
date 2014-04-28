@@ -1,7 +1,12 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using Caliburn.Micro;
+using RedmineApi;
+using RedmineClientW8.ViewModels;
+
 
 namespace RedmineClientW8.Views
 {
@@ -13,6 +18,12 @@ namespace RedmineClientW8.Views
         public MainView()
         {
             this.InitializeComponent();
+           
+        }
+
+        public Frame MainNavigationFrame
+        {
+            get { return this.MainFrame; }
         }
 
         /// <summary>
@@ -23,5 +34,11 @@ namespace RedmineClientW8.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }
+
+        private void MainView_OnLoaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
+ 

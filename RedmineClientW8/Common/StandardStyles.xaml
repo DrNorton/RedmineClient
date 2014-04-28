@@ -28,6 +28,19 @@
 
     <x:String x:Key="ChevronGlyph">&#xE26B;</x:String>
 
+
+
+    <Style x:Key="HeaderTextStyle" TargetType="TextBlock"  >
+        <Setter Property="FontSize" Value="26.667"/>
+        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="LineHeight" Value="30"/>
+        <Setter Property="RenderTransform">
+            <Setter.Value>
+                <TranslateTransform X="-1" Y="6"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <!-- RichTextBlock styles -->
 
     <Style x:Key="BasicRichTextStyle" TargetType="RichTextBlock">
@@ -82,16 +95,7 @@
         </Setter>
     </Style>
 
-    <Style x:Key="HeaderTextStyle" TargetType="TextBlock" BasedOn="{StaticResource BaselineTextStyle}">
-        <Setter Property="FontSize" Value="56"/>
-        <Setter Property="FontWeight" Value="Light"/>
-        <Setter Property="LineHeight" Value="40"/>
-        <Setter Property="RenderTransform">
-            <Setter.Value>
-                <TranslateTransform X="-2" Y="8"/>
-            </Setter.Value>
-        </Setter>
-    </Style>
+    
 
     <Style x:Key="SubheaderTextStyle" TargetType="TextBlock" BasedOn="{StaticResource BaselineTextStyle}">
         <Setter Property="FontSize" Value="26.667"/>
@@ -1826,4 +1830,6 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    
 </ResourceDictionary>
